@@ -18,4 +18,4 @@ However, the repo does not detail how to do the following:
 1. Play the audio without saving it
 2. Stream the audio as the text is being processed.
 
-This library leverages gTTS's incredible STT abilities to stream the audio of a text string
+This library leverages gTTS's incredible STT abilities to stream the converted audio for any given text
