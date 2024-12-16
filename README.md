@@ -10,12 +10,12 @@
 This is a simple one-file script that seeks to stream gTTS audio given a large piece of text.
 
 I love the gTTS library. It is an incredible hack on Google Translate's speech functionality. From the repo:
-```
-This project is leveraging the undocumented Google Translate speech functionality and is different from Google Cloud Text-to-Speech.
-```
+
+>  This project is leveraging the undocumented Google Translate speech functionality and is different from Google Cloud Text-to-Speech.
+
 
 However, the repo does not detail how to do the following:
 1. Play the audio without saving it
 2. Stream the audio as the text is being processed.
 
-This library leverages gTTS's incredible STT abilities to stream the converted audio for any given text
+
