@@ -56,3 +56,11 @@ text = '''
     print(f' Sentence of {len(text)} characters transcribed and read. First text was processed in {taken_time} seconds')
 ```
 ![](/images/sequential_time_to_process_first_output.PNG)
+
+#### 3. Save the audio (first conversion the entire text to bytes -> then save the audio as an mp3 file)
+```
+    print('Creating audio file to save...')
+    taken_time = save_audio(text)
+    print(f'Sentence of {len(text)} characters transcribed and read. File was processed and saved in {taken_time} seconds')
+```
+![](/images/sequential_time_to_save.PNG)
