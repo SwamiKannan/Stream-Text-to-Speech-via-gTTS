@@ -55,3 +55,4 @@ text = '''
     taken_time = process_sequential(text)
     print(f' Sentence of {len(text)} characters transcribed and read. First text was processed in {taken_time} seconds')
 ```
+![](/images/sequential_time_to_process_first_output.PNG)
