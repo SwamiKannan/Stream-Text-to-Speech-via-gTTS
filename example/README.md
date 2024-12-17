@@ -41,8 +41,11 @@ text = '''
 ```
 
 ### Sample runs:
+#### 1. Streaming
 ```
     print('Streaming output.....')
     taken_time = stream_stt(text)
     print(f' Sentence of {len(text)} characters transcribed and read. First text was processed in {taken_time} seconds')
 ```
+![](https://github.com/SwamiKannan/Stream-Text-to-Speech-via-gTTS/blob/main/images/streaming_time_to_process_first_output.PNG)
+
