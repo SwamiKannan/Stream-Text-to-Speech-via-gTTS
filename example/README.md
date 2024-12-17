@@ -41,8 +41,18 @@ text = '''
 ```
 
 ### Sample runs:
+#### 1. Streaming
 ```
     print('Streaming output.....')
     taken_time = stream_stt(text)
     print(f' Sentence of {len(text)} characters transcribed and read. First text was processed in {taken_time} seconds')
 ```
+![](/images/streaming_time_to_process_first_output.PNG)
+
+#### 2. Sequential (first conversion the entire text to bytes -> then play the audio)
+```
+    print('Playing sequential output......')
+    taken_time = process_sequential(text)
+    print(f' Sentence of {len(text)} characters transcribed and read. First text was processed in {taken_time} seconds')
+```
+![](/images/sequential_time_to_process_first_output.PNG)
