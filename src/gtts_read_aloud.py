@@ -4,6 +4,9 @@ import time
 from pydub import AudioSegment
 from pydub.playback import play
 
+from queue import Queue
+from threading import Thread
+
 
 text = '''
     Good morning sir. The main updates today are as follows:
