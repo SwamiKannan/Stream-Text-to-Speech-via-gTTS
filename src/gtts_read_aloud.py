@@ -7,6 +7,8 @@ from pydub.playback import play
 from queue import Queue
 from threading import Thread
 
+first_clip = False
+
 
 text = '''
     Good morning sir. The main updates today are as follows:
