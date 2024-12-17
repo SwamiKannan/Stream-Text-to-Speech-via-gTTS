@@ -1,5 +1,4 @@
 from gtts import gTTS
-# from coqui_test import text
 from io import BytesIO
 import time
 from pydub import AudioSegment
