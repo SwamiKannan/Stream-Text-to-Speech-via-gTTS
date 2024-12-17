@@ -9,7 +9,19 @@ from threading import Thread
 
 first_clip = False
 
-
+def play_audio(q:Queue):
+    global end_time, first_clip
+    while not q.empty():
+        mp3_fp = BytesIO()
+        buff = q.get()
+        mp3_fp.write(buff)
+        mp3_fp.seek(0)
+        song = AudioSegment.from_file(mp3_fp, format="mp3")
+        if not first_clip:  
+            end_time = time.time()
+            first_clip = True
+        play(song)
+        
 text = '''
     Good morning sir. The main updates today are as follows:
     News:.
