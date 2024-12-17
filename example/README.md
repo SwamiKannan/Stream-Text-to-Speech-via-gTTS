@@ -63,3 +63,4 @@ text = '''
     taken_time = save_audio(text)
     print(f'Sentence of {len(text)} characters transcribed and read. File was processed and saved in {taken_time} seconds')
 ```
+![](/images/sequential_time_to_save.PNG)
