@@ -47,6 +47,14 @@ def process_sequential(text):
     end_time = time.time()
     play(song)
     return end_time-st_time
+    
+def save_audio(text):
+    print('Started converting')
+    st_time = time.time()
+    ttsa = gTTS(text)
+    ttsa.save('assistant.mp3')
+    end_time = time.time()
+    return end_time - st_time
         
 text = '''
     Good morning sir. The main updates today are as follows:
