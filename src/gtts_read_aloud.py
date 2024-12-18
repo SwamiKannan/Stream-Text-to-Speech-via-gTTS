@@ -35,6 +35,18 @@ def stream_stt(text):
             thread1.start()
     thread1.join()
     return end_time - st_time
+    
+def process_sequential(text):
+    print('Started converting')
+    mp3_fp = BytesIO()
+    st_time = time.time()
+    ttsa = gTTS(text)
+    ttsa.write_to_fp(mp3_fp)
+    mp3_fp.seek(0)
+    song = AudioSegment.from_file(mp3_fp, format="mp3")
+    end_time = time.time()
+    play(song)
+    return end_time-st_time
         
 text = '''
     Good morning sir. The main updates today are as follows:
