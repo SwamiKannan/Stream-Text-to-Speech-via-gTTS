@@ -64,3 +64,6 @@ text = '''
     print(f'Sentence of {len(text)} characters transcribed and read. File was processed and saved in {taken_time} seconds')
 ```
 ![](/images/sequential_time_to_save.PNG)
+
+### Generated audio:
+https://github.com/SwamiKannan/Stream-Text-to-Speech-via-gTTS/blob/main/example/assistant.mp3
