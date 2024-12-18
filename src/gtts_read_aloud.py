@@ -55,7 +55,7 @@ def save_audio(text):
     ttsa.save('assistant.mp3')
     end_time = time.time()
     return end_time - st_time
-        
+   
 text = '''
     Good morning sir. The main updates today are as follows:
     News:.
