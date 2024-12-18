@@ -56,13 +56,3 @@ def save_audio(text):
     end_time = time.time()
     return end_time - st_time
 
-
-def play_audio(q:Queue):
-    while not q.empty():
-        print('Removing item for processing')
-        mp3_fp = BytesIO()
-        buff = q.get()
-        mp3_fp.write(buff)
-        mp3_fp.seek(0)
-        song = AudioSegment.from_file(mp3_fp, format="mp3")
-        play(song)
