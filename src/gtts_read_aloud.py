@@ -21,6 +21,20 @@ def play_audio(q:Queue):
             end_time = time.time()
             first_clip = True
         play(song)
+
+def stream_stt(text):
+    q = Queue(maxsize = 20)
+    thread1 = Thread(target=play_audio, args =[q])
+    st_time = time.time()
+    print('Started converting')
+    for i, buff in enumerate(gTTS(text, lang = 'en', tld= 'co.uk').stream()):
+        q.put(buff)
+        if i == 0:
+            # end_time = time.time()
+            # print(end_time - st_time)
+            thread1.start()
+    thread1.join()
+    return end_time - st_time
         
 text = '''
     Good morning sir. The main updates today are as follows:
