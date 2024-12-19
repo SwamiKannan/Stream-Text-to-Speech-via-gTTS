@@ -33,3 +33,6 @@ from src import stream_stt
 ```
 stream_stt(text)
 ```
+
+## Sample outputs
+[Sample output for the script](/example/README.md)
