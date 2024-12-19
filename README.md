@@ -31,5 +31,5 @@ from src import stream_stt
 
 #### Run the function
 ```
-strean_stt(text)
+stream_stt(text)
 ```
