@@ -16,3 +16,20 @@ However, the repo does not detail how to do the following:
 2. Stream the audio as the text is being processed.
 
 > **This is a simple one-file script that seeks to stream gTTS audio given a large piece of text.**
+
+
+
+## Usage:
+#### Download the repo 
+```
+https://github.com/SwamiKannan/Stream-Text-to-Speech-via-gTTS.git
+```
+#### Import the function
+```
+from src import stream_stt
+```
+
+#### Run the function
+```
+strean_stt(text)
+```
